@@ -1,15 +1,21 @@
 package stalls;
 
-public abstract class Stall IReviewed, ITicketed, ISecurity {
+import behaviours.IReviewed;
+import behaviours.ISecurity;
+import behaviours.ITicketed;
+
+public abstract class Stall implements IReviewed, ITicketed, ISecurity {
 
     private String name;
     private String ownerName;
     private ParkingSpot parkingSpot;
+    private int rating;
 
-    public Stall(String name, String ownerName, ParkingSpot parkingSpot) {
+    public Stall(String name, String ownerName, ParkingSpot parkingSpot, int rating) {
         this.name = name;
         this.ownerName = ownerName;
         this.parkingSpot = parkingSpot;
+        this.rating = rating;
     }
 
     public String getName() {
@@ -23,4 +29,10 @@ public abstract class Stall IReviewed, ITicketed, ISecurity {
     public ParkingSpot getParkingSpot() {
         return parkingSpot;
     }
+
+    public int getRating() {
+        return rating;
+    }
+
+
 }
