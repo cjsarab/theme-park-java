@@ -1,6 +1,6 @@
 package stalls;
 
-public abstract class Stall {
+public abstract class Stall IReviewed, ITicketed, ISecurity {
 
     private String name;
     private String ownerName;

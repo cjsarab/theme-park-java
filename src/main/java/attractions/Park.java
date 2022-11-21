@@ -17,4 +17,8 @@ public class Park extends Attraction {
         double price = defaultPrice();
         return price;
     }
+
+    public boolean isAllowedTo(Visitor visitor) {
+        return true;
+    }
 }

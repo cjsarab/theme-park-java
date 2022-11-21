@@ -1,9 +1,10 @@
 package attractions;
 
 import behaviours.IReviewed;
+import behaviours.ISecurity;
 import behaviours.ITicketed;
 
-public abstract class Attraction implements IReviewed, ITicketed {
+public abstract class Attraction implements IReviewed, ITicketed, ISecurity {
     private String name;
     private int rating;
     private int visitCount;

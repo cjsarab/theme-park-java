@@ -21,4 +21,14 @@ public class RollerCoaster  extends Attraction {
         }
         return price;
     }
+
+    public boolean isAllowedTo(Visitor visitor) {
+        int age = visitor.getAge();
+        double height = visitor.getHeight();
+
+        if (age > 12 && height > 145d) {
+            return true;
+        }
+        return false;
+    }
 }

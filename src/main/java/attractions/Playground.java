@@ -18,4 +18,12 @@ public class Playground extends Attraction {
         return price;
     }
 
+    public boolean isAllowedTo(Visitor visitor) {
+        int age = visitor.getAge();
+        if (age < 16) {
+            return true;
+        }
+        return false;
+    }
+
 }

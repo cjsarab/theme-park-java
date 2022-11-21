@@ -24,4 +24,8 @@ public class Dodgems extends Attraction {
         }
         return price;
     }
+
+    public boolean isAllowedTo(Visitor visitor) {
+        return true;
+    }
 }
