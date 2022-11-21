@@ -11,7 +11,7 @@ public class VisitorTest {
 
     @Before
     public void before(){
-        visitor = new Visitor(14, 1.2, 40.0);
+        visitor = new Visitor(14, 1.2d, 40.0d);
     }
 
     @Test
